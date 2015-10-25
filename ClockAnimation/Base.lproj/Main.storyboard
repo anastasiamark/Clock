@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xwj-Jp-tl8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Clock Controller-->
+        <scene sceneID="8eb-Fw-7qL">
+            <objects>
+                <viewController id="Xwj-Jp-tl8" customClass="AMClockController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1bV-Zx-nJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="wFc-cG-ILn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ge7-DN-2Gl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="iG2-U6-E4q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="kHy-U5-kAx"/>
+                                    <constraint firstAttribute="height" constant="350" id="lhD-SM-KPp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kHy-U5-kAx"/>
+                                        <exclude reference="lhD-SM-KPp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="kHy-U5-kAx"/>
+                                        <include reference="lhD-SM-KPp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minuteArrow" translatesAutoresizingMaskIntoConstraints="NO" id="BZy-NF-nGM" userLabel="minute">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Xy8-S3-NDY"/>
+                                    <constraint firstAttribute="width" constant="170" id="o8Q-0m-nvi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xy8-S3-NDY"/>
+                                        <exclude reference="o8Q-0m-nvi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Xy8-S3-NDY"/>
+                                        <include reference="o8Q-0m-nvi"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourArrow" translatesAutoresizingMaskIntoConstraints="NO" id="rcQ-oh-Wm4" userLabel="hour">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="EKh-pi-lIh"/>
+                                    <constraint firstAttribute="height" constant="170" id="xHY-NN-00l"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EKh-pi-lIh"/>
+                                        <exclude reference="xHY-NN-00l"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="EKh-pi-lIh"/>
+                                        <include reference="xHY-NN-00l"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondArrow" translatesAutoresizingMaskIntoConstraints="NO" id="m8g-eY-u8M" userLabel="second">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Gtx-ki-adY"/>
+                                    <constraint firstAttribute="width" constant="170" id="qVq-o9-h1q"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gtx-ki-adY"/>
+                                        <exclude reference="qVq-o9-h1q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gtx-ki-adY"/>
+                                        <include reference="qVq-o9-h1q"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BZy-NF-nGM" firstAttribute="centerX" secondItem="iG2-U6-E4q" secondAttribute="centerX" id="5kf-Yb-9Iw"/>
+                            <constraint firstItem="m8g-eY-u8M" firstAttribute="centerY" secondItem="iG2-U6-E4q" secondAttribute="centerY" id="XYn-Xh-aUr"/>
+                            <constraint firstItem="rcQ-oh-Wm4" firstAttribute="centerY" secondItem="iG2-U6-E4q" secondAttribute="centerY" id="aiW-ik-wlX"/>
+                            <constraint firstItem="BZy-NF-nGM" firstAttribute="centerY" secondItem="iG2-U6-E4q" secondAttribute="centerY" id="jX6-UW-Ddt"/>
+                            <constraint firstItem="rcQ-oh-Wm4" firstAttribute="centerX" secondItem="iG2-U6-E4q" secondAttribute="centerX" id="jz2-Cr-X0p"/>
+                            <constraint firstItem="iG2-U6-E4q" firstAttribute="centerY" secondItem="Ge7-DN-2Gl" secondAttribute="centerY" id="lwE-CV-0Yq"/>
+                            <constraint firstItem="m8g-eY-u8M" firstAttribute="centerX" secondItem="iG2-U6-E4q" secondAttribute="centerX" id="m10-WR-k9d"/>
+                            <constraint firstItem="iG2-U6-E4q" firstAttribute="centerX" secondItem="Ge7-DN-2Gl" secondAttribute="centerX" id="mUh-af-Qax"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iG2-U6-E4q"/>
+                                <exclude reference="BZy-NF-nGM"/>
+                                <exclude reference="rcQ-oh-Wm4"/>
+                                <exclude reference="m8g-eY-u8M"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5kf-Yb-9Iw"/>
+                                <exclude reference="jX6-UW-Ddt"/>
+                                <exclude reference="lwE-CV-0Yq"/>
+                                <exclude reference="mUh-af-Qax"/>
+                                <exclude reference="XYn-Xh-aUr"/>
+                                <exclude reference="m10-WR-k9d"/>
+                                <exclude reference="aiW-ik-wlX"/>
+                                <exclude reference="jz2-Cr-X0p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iG2-U6-E4q"/>
+                                <include reference="BZy-NF-nGM"/>
+                                <include reference="rcQ-oh-Wm4"/>
+                                <include reference="m8g-eY-u8M"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5kf-Yb-9Iw"/>
+                                <include reference="jX6-UW-Ddt"/>
+                                <include reference="lwE-CV-0Yq"/>
+                                <include reference="mUh-af-Qax"/>
+                                <include reference="XYn-Xh-aUr"/>
+                                <include reference="m10-WR-k9d"/>
+                                <include reference="aiW-ik-wlX"/>
+                                <include reference="jz2-Cr-X0p"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="hourArrowImageView" destination="rcQ-oh-Wm4" id="opL-ba-F5c"/>
+                        <outlet property="minuteArrowImageView" destination="BZy-NF-nGM" id="YuZ-Nq-cpn"/>
+                        <outlet property="secondArrowImageView" destination="m8g-eY-u8M" id="qP1-Vd-Jhf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwT-we-UdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.5" y="-201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock" width="900" height="900"/>
+        <image name="hourArrow" width="170" height="170"/>
+        <image name="minuteArrow" width="170" height="170"/>
+        <image name="secondArrow" width="170" height="170"/>
+    </resources>
+</document>
